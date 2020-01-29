@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapcoWebAPI", "CapcoWebAPI\CapcoWebAPI.csproj", "{3A9C35C4-2F62-42E1-A95D-4517C075ED56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiClient", "CoreApiClient\CoreApiClient.csproj", "{0185BEED-1702-49AB-AD33-DD90BD9E768E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A9C35C4-2F62-42E1-A95D-4517C075ED56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9C35C4-2F62-42E1-A95D-4517C075ED56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9C35C4-2F62-42E1-A95D-4517C075ED56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9C35C4-2F62-42E1-A95D-4517C075ED56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0185BEED-1702-49AB-AD33-DD90BD9E768E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0185BEED-1702-49AB-AD33-DD90BD9E768E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0185BEED-1702-49AB-AD33-DD90BD9E768E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0185BEED-1702-49AB-AD33-DD90BD9E768E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D66A9631-881C-453E-ABB4-9D8291814C2E}
+	EndGlobalSection
+EndGlobal

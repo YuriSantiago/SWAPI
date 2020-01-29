@@ -1,0 +1,45 @@
+﻿@model CoreApiClient.Entities.People
+
+@{
+    ViewData["Title"] = "Obter personagem por ID";
+
+}
+
+@using (@Html.BeginForm("GetPeopleById", "Home", FormMethod.Get))
+{
+
+    <p>Informe um id:</p>@Html.TextBox("idPeople")
+    <input type="submit" value="Pesquisar Personagem" />
+}
+<br />
+<table border="1">
+    <tr>
+        <th>
+          Nome
+        </th>
+        <th>
+          Ano
+        </th>
+        <th>
+          Filmes
+        </th>
+    </tr>
+  
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.birth_year)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.films)
+                </td>
+              
+            </tr>
+
+</table>
+
+
+
+

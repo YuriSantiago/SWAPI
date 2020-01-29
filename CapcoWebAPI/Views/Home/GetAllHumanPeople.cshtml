@@ -1,0 +1,53 @@
+﻿@model List<CoreApiClient.Entities.People>
+
+@{
+    ViewData["Title"] = "Todas as Personagens Humanas";
+
+    double mediaPeso = 0;
+    double divisao = 0;
+    double resultado = 0;
+
+
+    foreach (var item in Model)
+    {
+      
+
+        if (item.mass != "unknown")
+        {
+            divisao++;
+            mediaPeso += Convert.ToDouble(item.mass);
+        }
+    }
+
+    resultado = mediaPeso / divisao;
+
+}
+
+<h3>Todas as personagens humanas</h3>
+<h4>Média de Peso: @resultado.ToString("F")</h4>
+
+<div class="text-left">
+
+
+    <table style="width:100%">
+        <tr>
+            <th>Nome</th>
+            <th>Peso</th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+
+            <tr>
+                <td>@item.name</td>
+                <td>@item.mass</td>
+            </tr>
+
+        }
+
+    </table>
+
+</div>
+

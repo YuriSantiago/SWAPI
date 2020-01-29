@@ -1,0 +1,9 @@
+﻿@model List<CoreApiClient.Entities.People>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="GetAllPeople">Todas as personagens ordenadas por quantidade de filmes e por ordem alfabética</a>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="GetPeopleById">Obter personagem por ID</a>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="GetAllHumanPeople">Todas as personagens humanas e sue média de peso</a>
